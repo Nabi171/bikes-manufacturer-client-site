@@ -1,0 +1,56 @@
+[
+    {
+        "Name": "Travel Tool Kit",
+        "id": 1,
+        "price": 1500,
+        "availableQuantity": 2000,
+        "minimumOrder": 10,
+        "imageLink": "https://i.ibb.co/7Jp9JLW/img1-removebg-preview.png",
+        "description": "This is used for the bike riders if they face the problem in their as they can solve thier bike problem."
+    },
+    {
+        "Name": "Tool Check Plus",
+        "id": 2,
+        "price": 1600,
+        "availableQuantity": 200,
+        "minimumOrder": 3,
+        "imageLink": "https://i.ibb.co/Vg0N9vr/img2-removebg-preview-1.png",
+        "description": "This is used for the bike repaired engine riders where they can repair their engine if anyone face engine problems."
+    },
+    {
+        "Name": "Mini-ratChet Set",
+        "id": 3,
+        "price": 1800,
+        "availableQuantity": 1000,
+        "minimumOrder": 9,
+        "imageLink": "https://i.ibb.co/w7TpzWZ/img3-removebg-preview.png",
+        "description": "this is used for the bike riders if they face the problem in their as they can solve thier bike problem."
+    },
+    {
+        "Name": "Dust Cap",
+        "id": 4,
+        "price": 500,
+        "availableQuantity": 700,
+        "minimumOrder": 2,
+        "imageLink": "https://i.ibb.co/nP2v1mL/img4-removebg-preview.png",
+        "description": "this is used for the bike riders if they face the problem in their as they can solve thier bike problem."
+    },
+    {
+        "Name": "Bleeder Valve",
+        "id": 5,
+        "price": 400,
+        "availableQuantity": 1700,
+        "minimumOrder": 12,
+        "imageLink": "https://i.ibb.co/rHBgmz8/img5-removebg-preview.png",
+        "description": "this is used for the bike riders if they face the problem in their as they can solve thier bike problem."
+    },
+    {
+        "Name": "Disk Brake Piston Spreader",
+        "id": 6,
+        "price": 100,
+        "availableQuantity": 700,
+        "minimumOrder": 5,
+        "imageLink": "https://i.ibb.co/BG85z7c/img6-removebg-preview.png",
+        "description": "this is used for the bike riders if they face the problem in their as they can solve thier bike problem."
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "Name": "Alex pauling",
+        "ratings": "5",
+        "id": 1,
+        "imageLink": "images/img7.jpg",
+        "reviews": "cool man!!their tools are too good"
+    },
+    {
+        "Name": "Robert Hons",
+        "ratings": "4",
+        "id": 2,
+        "imageLink": "images/img8.jpg",
+        "reviews": "Their equipments are awesome"
+    },
+    {
+        "Name": "Ricob Zecon",
+        "ratings": "3.5",
+        "id": 3,
+        "imageLink": "images/img9.jpg",
+        "reviews": "The best equipment ever!!"
+    },
+    {
+        "Name": "Flevis Alpo",
+        "ratings": "3.5",
+        "id": 4,
+        "imageLink": "images/img10.jpg",
+        "reviews": "The best equipment ever!!"
+    },
+    {
+        "Name": "Zeson Ark",
+        "ratings": "4.5",
+        "id": 5,
+        "imageLink": "images/img11.jpg",
+        "reviews": "Thanks guy for managing aweome tools"
+    },
+    {
+        "Name": "Alex pauling",
+        "ratings": "3.5",
+        "id": 6,
+        "imageLink": "images/img12.jpg",
+        "reviews": "All time i got best equipments!!"
+    }
+]
