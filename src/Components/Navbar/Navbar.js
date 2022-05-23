@@ -6,15 +6,29 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { signOut } from '@firebase/auth';
 const Navbar = () => {
     const [user] = useAuthState(auth);
+    console.log(user);
     const logout = () => {
         signOut(auth);
     };
     const menuItems = <>
         <li><Link className='font-black' to="/">Home</Link></li>
-        <li><Link className='font-black' to="/appointment">Appointment</Link></li>
-        <li><Link className='font-black' to="/review">Review</Link></li>
+        <li><Link className='font-black' to="/dassboard">Dassboard</Link></li>
+        <li><Link className='font-black' to="/blogs">Blogs</Link></li>
         <li><Link className='font-black' to="/register">Register</Link></li>
-        <li>{user ? <button className='font-black' onClick={logout} >Sign Out</button> : <Link className='font-black' to="/login">Login</Link>}</li>
+        <li>{user ?
+            <button className='font-black' onClick={logout} >Sign Out</button>
+
+            : <Link className='font-black' to="/login">Login</Link>}</li>
+        <li>{user &&
+
+            <div class="avatar online placeholder">
+                <div class="bg-neutral-focus text-neutral-content rounded-full w-16">
+                    <span class="text-xl">{user.displayName}</span>
+                </div>
+            </div>
+
+        }</li>
+
     </>
     return (
         <div className="navbar bg-base-100 navbar-bg">

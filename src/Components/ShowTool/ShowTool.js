@@ -1,7 +1,9 @@
 import React from 'react';
 import '../ShowTool/ShowTool.css'
+import { useNavigate } from 'react-router';
 const ShowTool = (props) => {
-    const { Name, imageLink, price, description, availableQuantity, minimumOrder } = props.tool;
+    const { Name, imageLink, price, description, availableQuantity, minimumOrder, _id } = props.tool;
+    const navigate = useNavigate();
     return (
         <div >
             <div class="card lg:max-w-lg bg-base-100 shadow-xl bg-card">
@@ -17,7 +19,13 @@ const ShowTool = (props) => {
                     <h4>Minimum Order:{minimumOrder}</h4>
                     <p>{description}</p>
                     <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button
+                            onClick={() => navigate('/purchase/' + _id)}
+                            class="btn btn-primary">Purchase</button>
+
+
+
+
                     </div>
                 </div>
             </div>
