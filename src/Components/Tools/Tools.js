@@ -17,6 +17,7 @@ const Tools = () => {
                 {
                     tools.map(tool => <ShowTool
                         tool={tool._id} tool={tool}
+
                     ></ShowTool>)
                 }
             </div>

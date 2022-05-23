@@ -9,6 +9,9 @@ import RequireAuth from './Components/RequireAuth/RequireAuth';
 import PurChase from './Components/PurChase/PurChase';
 import Dashboard from './Components/Dassboard/Dassboard';
 import MyProfile from './Components/MyProfile/MyProfile';
+import Review from './Components/Review/Review';
+import AddReview from './Components/AddReview/AddReview';
+import AllReviews from './Components/AllReviews/AllReviews';
 
 function App() {
   return (
@@ -19,7 +22,10 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/dassboard" element={<Dashboard />} />
         <Route path="dashboard/myprofile" element={<MyProfile />} />
+        <Route path="dashboard/addreviews" element={<AddReview />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/review" element={<Review />} />
+        <Route path="/allreviews" element={<AllReviews />} />
         <Route path="/register" element={<Register />} />
         <Route path='/purchase/:id' element={
           <RequireAuth>
