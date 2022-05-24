@@ -12,6 +12,7 @@ import MyProfile from './Components/MyProfile/MyProfile';
 import Review from './Components/Review/Review';
 import AddReview from './Components/AddReview/AddReview';
 import AllReviews from './Components/AllReviews/AllReviews';
+import Myorder from './Components/Myorder/Myorder';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/dassboard" element={<Dashboard />} />
         <Route path="dashboard/myprofile" element={<MyProfile />} />
         <Route path="dashboard/addreviews" element={<AddReview />} />
+        <Route path="dashboard/myOrder" element={<Myorder />} />
         <Route path="/login" element={<Login />} />
         <Route path="/review" element={<Review />} />
         <Route path="/allreviews" element={<AllReviews />} />
