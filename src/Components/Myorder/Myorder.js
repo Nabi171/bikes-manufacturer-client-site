@@ -40,7 +40,6 @@ const Myorder = () => {
                             <td>{myOrder.email}</td>
                             <td>{myOrder.price}</td>
 
-
                         </tr>)
                     }
                 </tbody>

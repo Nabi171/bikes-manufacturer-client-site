@@ -13,7 +13,8 @@ import Review from './Components/Review/Review';
 import AddReview from './Components/AddReview/AddReview';
 import AllReviews from './Components/AllReviews/AllReviews';
 import Myorder from './Components/Myorder/Myorder';
-
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 function App() {
   return (
     <div className="App">
@@ -35,6 +36,7 @@ function App() {
           </RequireAuth>
         } />
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
