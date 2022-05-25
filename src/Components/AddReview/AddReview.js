@@ -38,9 +38,9 @@ const AddReview = () => {
             <div class="card-body justify-center items-center navbar-bg">
                 <br />
                 <form onSubmit={handleSubmit(onSubmit)} class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 bg-card p-4">
-                    <div class="form-control">Add Phones</div>
+                    <div class="form-control">Add Reviews</div>
                     <div >
-                        <label class="label">Phone Name</label>
+                        <label class="label">Name</label>
                         <input className="input input-bordered w-full max-w-xs" type="text" placeholder='Name' {...register("Name", { required: true, maxLength: 20 })} />
 
                         <label class="label">Ratings</label>
