@@ -9,7 +9,7 @@ const Updateprofile = () => {
 
         const url = `http://localhost:4000/updateProfile`;
         fetch(url, {
-            method: 'POST',
+            method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
