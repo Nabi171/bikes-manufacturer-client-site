@@ -10,7 +10,7 @@ const MyProfile = () => {
             <div className="navbar-bg">
                 <div class="card w-96 bg-base-100 shadow-xl mx-auto items-center justify-center ">
                     <figure class="px-10 pt-10">
-                        <img src={user.photoUrl} alt="Shoes" class="rounded-xl" />
+                        <img src={user ?.photoUrl} alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">{user.displayName}</h2>
