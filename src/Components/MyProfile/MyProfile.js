@@ -30,7 +30,9 @@ const MyProfile = () => {
                     {/* <p>{updatedUser.education}</p> */}
                     {updatedUser ? <div>
                         {updatedUser.map(upuser =>
-                            <Showprofile upuser={upuser}></Showprofile>
+                            <Showprofile
+                                key={upuser._id}
+                                upuser={upuser}></Showprofile>
                         )}
                     </div>
                         : ''
