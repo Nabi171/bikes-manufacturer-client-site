@@ -24,7 +24,7 @@ const Myorder = () => {
     const id = useParams();
 
     const handleDelete = id => {
-        const proceed = window.confirm('Are you sure?');
+        const proceed = window.confirm('Are you sure to delete?');
         if (proceed) {
             const url = `http://localhost:4000/bookedTools/${id}`;
             fetch(url, {
@@ -33,7 +33,7 @@ const Myorder = () => {
                 .then(res => res.json())
                 .then(data => {
                     console.log(data);
-                    const rest = myOrders.filter(item => item._id !== id);
+                    const rest = myOrders.filter(order => order._id !== id);
                     setMyOrders(rest);
                 })
         }

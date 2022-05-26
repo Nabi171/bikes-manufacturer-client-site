@@ -57,7 +57,7 @@ const PurChase = () => {
                     alert(`Order Recieved Successfully for ${tool.Name}`);
                     navigate('/home');
                 } else {
-                    alert(`You have already placed order for ${tool.Name}`);
+                    alert(`You have placed order for ${tool.Name}`);
                 }
             });
 

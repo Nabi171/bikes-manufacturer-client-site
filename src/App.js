@@ -17,6 +17,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import Updateprofile from './Components/MyProfile/Updateprofile';
 import NotFound from './Components/Notfound/NotFound';
+import Blogs from './Components/Blogs/Blogs';
 function App() {
   return (
     <div className="App">
@@ -30,6 +31,7 @@ function App() {
         <Route path="dashboard/myOrder" element={<Myorder />} />
         <Route path="dashboard/updatedProfie" element={<Updateprofile />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/review" element={<Review />} />
         <Route path="/allreviews" element={<AllReviews />} />
         <Route path="/register" element={<Register />} />
