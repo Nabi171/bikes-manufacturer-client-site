@@ -18,6 +18,9 @@ import { ToastContainer } from 'react-toastify';
 import Updateprofile from './Components/MyProfile/Updateprofile';
 import NotFound from './Components/Notfound/NotFound';
 import Blogs from './Components/Blogs/Blogs';
+import AddProduct from './Components/Addproduct/AddProduct';
+import Allproduct from './Components/AllProduct/Allproduct';
+import Portfolio from './Components/Portfolio/Portfolio';
 function App() {
   return (
     <div className="App">
@@ -30,9 +33,12 @@ function App() {
         <Route path="dashboard/addreviews" element={<AddReview />} />
         <Route path="dashboard/myOrder" element={<Myorder />} />
         <Route path="dashboard/updatedProfie" element={<Updateprofile />} />
+        <Route path="dashboard/addProduct" element={<AddProduct />} />
+        <Route path="dashboard/allProduct" element={<Allproduct />} />
         <Route path="/login" element={<Login />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/review" element={<Review />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/allreviews" element={<AllReviews />} />
         <Route path="/register" element={<Register />} />
         <Route path='/purchase/:id' element={

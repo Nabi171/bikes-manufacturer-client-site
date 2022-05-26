@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ShowTool from '../ShowTool/ShowTool';
 import '../Tools/Tools.css';
-const Tools = () => {
+const Allproduct = () => {
     const [tools, setTools] = useState([]);
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const Tools = () => {
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
-                    tools.slice(0, 6).map(tool => <ShowTool
+                    tools.map(tool => <ShowTool
                         tool={tool._id} tool={tool}
 
                     ></ShowTool>)
@@ -25,4 +25,4 @@ const Tools = () => {
     );
 };
 
-export default Tools;
+export default Allproduct;

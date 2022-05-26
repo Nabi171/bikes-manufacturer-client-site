@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img from '../Register/keki.png'
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import useToken from '../../useToken';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -15,26 +16,26 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
     const navigate = useNavigate();
-    // const [token] = useToken(user || gUser);
+    const [token] = useToken(user || gUser);
 
     let signInError;
-    // const navigate = useNavigate();
-    // const location = useLocation();
-    // let from = location.state ?.from ?.pathname || "/";
 
-    // useEffect(() => {
-    //     if (token) {
-    //         navigate(from, { replace: true });
-    //     }
-    // }, [token, from, navigate])
+    const location = useLocation();
+    let from = location.state ?.from ?.pathname || "/";
+
+    useEffect(() => {
+        if (token) {
+            navigate(from, { replace: true });
+        }
+    }, [token, from, navigate])
 
     // if (loading || gLoading) {
     //     return <Loading></Loading>
     // }
 
-    // if (error || gError) {
-    //     signInError = <p className='text-red-500'><small>{error ?.message || gError ?.message }</small></p>
-    // }
+    if (error || gError) {
+        signInError = <p className='text-red-500'><small>{error ?.message || gError ?.message }</small></p>
+    }
 
     if (user || gUser) {
         navigate('/home');

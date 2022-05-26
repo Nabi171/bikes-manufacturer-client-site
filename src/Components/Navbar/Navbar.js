@@ -17,6 +17,7 @@ const Navbar = () => {
         <li><Link className='font-black' to="/blogs">Blogs</Link></li>
         <li><Link className='font-black' to="/allreviews">Reviews</Link></li>
         <li><Link className='font-black' to="/register">Register</Link></li>
+        <li><Link className='font-black' to="/portfolio">Portfolio</Link></li>
         <li>{user ?
             <button className='font-black' onClick={logout} >Sign Out</button>
 
