@@ -21,6 +21,7 @@ import Blogs from './Components/Blogs/Blogs';
 import AddProduct from './Components/Addproduct/AddProduct';
 import Allproduct from './Components/AllProduct/Allproduct';
 import Portfolio from './Components/Portfolio/Portfolio';
+import Users from './Components/Users/Users';
 function App() {
   return (
     <div className="App">
@@ -35,6 +36,7 @@ function App() {
         <Route path="dashboard/updatedProfie" element={<Updateprofile />} />
         <Route path="dashboard/addProduct" element={<AddProduct />} />
         <Route path="dashboard/allProduct" element={<Allproduct />} />
+        <Route path="/dashboard/users" element={<Users />} />
         <Route path="/login" element={<Login />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/review" element={<Review />} />
