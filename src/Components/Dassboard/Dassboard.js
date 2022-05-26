@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 
@@ -12,6 +12,7 @@ const Dashboard = () => {
             <input id="dashboard-sidebar" type="checkbox" class="drawer-toggle" />
             <div class="drawer-content">
                 <h2 className='text-2xl font-bold text-purple-500'>Welcome to your Dashboard</h2>
+                <Outlet></Outlet>
             </div>
             <div class="drawer-side navbar-bg">
                 <label for="dashboard-sidebar" class="drawer-overlay"></label>

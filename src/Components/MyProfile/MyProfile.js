@@ -29,9 +29,11 @@ const MyProfile = () => {
                     <p><span class="text-black">Email</span>{user.email}</p>
                     {/* <p>{updatedUser.education}</p> */}
                     {updatedUser ? <div>
-                        {updatedUser.map(upuser =>
+                        {updatedUser.slice(0, 1).map(upuser =>
                             <Showprofile
                                 key={upuser._id}
+                                updatedUser={updatedUser}
+                                setUpdatedUser={setUpdatedUser}
                                 upuser={upuser}></Showprofile>
                         )}
                     </div>

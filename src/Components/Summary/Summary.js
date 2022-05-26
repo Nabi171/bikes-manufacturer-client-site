@@ -1,5 +1,7 @@
 import React from 'react';
 import img from '../Summary/summary.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPersonBiking, faAward, faPenFancy, faMotorcycle } from '@fortawesome/free-solid-svg-icons'
 const Summary = () => {
     return (
         <div className='container mx-auto '>
@@ -9,11 +11,24 @@ const Summary = () => {
                     <div>
                         <h1 class="text-5xl font-bold">Best collection all the time</h1>
                         <hr />
-                        <p class="py-6">We provide best bike parts all the time and there reserved best bike parts collection.We served thousand of customers still serving our best effort.We hope that that you will be grateful for our product.</p>
-                        <p><span className='font-bold'>Serving Customers:</span></p>
-                        <p><span className='font-bold'>Serving Customers</span></p>
-                        <p><span className='font-bold'>Serving Customers</span></p>
-                        <p><span className='font-bold'>Serving Customers</span></p>
+                        <p class="py-6 text-1xl text-primary font-bold ">We provide best bike parts all the time and there reserved best bike parts collection.We served thousand of customers still serving our best effort.We hope that that you will be grateful for our product.</p>
+                        <p className='text-2xl'><span className='font-bold text-2xl'>Serving Customers
+                        <FontAwesomeIcon className='text-orange-400 h-10' icon={faPersonBiking} />:
+                        </span> 100+</p>
+
+                        <p className='text-2xl'><span className='font-bold text-2xl'>Annual revenue
+                        <FontAwesomeIcon className='text-orange-400 h-10' icon={faAward} />:
+                        </span>100K+</p>
+
+                        <p className='text-2xl'><span className='font-bold text-2xl'> Reviews
+                        <FontAwesomeIcon className='text-orange-400 h-10' icon={faPenFancy} />:
+                        </span>  0.5K+</p>
+
+                        <p className='text-2xl'><span className='font-bold text-2xl'>Tools
+                        <FontAwesomeIcon className='text-orange-400 h-10' icon={faMotorcycle} />:
+                        </span>  10+</p>
+
+
                     </div>
                 </div>
             </div>

@@ -1,14 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 const Showprofile = (props) => {
 
-    const { education, Location, phoneNumber } = props.upuser;
+    const { education, Location, phoneNumber, linkdeinLink } = props.upuser;
     const [myProfile, setMyprofile] = useState([]);
+    const user = useAuthState(auth);
+
+
+    useEffect(() => {
+
+        fetch("http://localhost:4000/updateProfile", {
+            method: 'GET',
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
+            .then(res => res.json())
+            .then(data => setMyprofile(data))
+
+    }, [])
+
+
     const id = useParams();
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:4000/updatedProfile/${id}`;
+            const url = `http://localhost:4000/updateProfile/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -25,7 +45,8 @@ const Showprofile = (props) => {
             <p><span className='font-bold'>Education Institutation:</span>{education}</p>
             <p><span className='font-bold'>Location:</span>{Location}</p>
             <p><span className='font-bold'>Phone Number:</span>{phoneNumber}</p>
-            <button className='btn btn-primary' onClick={() => handleDelete(myProfile._id)}>Delete This Info</button>
+            <p><span className='font-bold'>Linkdein Link:</span>{linkdeinLink}</p>
+
         </div>
     );
 };
