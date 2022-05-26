@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 const Myorder = () => {
     const [user] = useAuthState(auth);
 
@@ -58,6 +59,8 @@ const Myorder = () => {
                                 <th>email</th>
                                 <th>price</th>
                                 <th>Do you wanna cancel the order?</th>
+                                <th>Make Payment</th>
+
                             </tr>
                         </thead>
                         <tbody>
@@ -71,6 +74,13 @@ const Myorder = () => {
                                     <td>
                                         <button className='btn btn-primary' onClick={() => handleDelete(myOrder._id)}>Cancel Order</button>
 
+                                    </td>
+                                    <td>
+                                        {(myOrder.price && !myOrder.paid) && <Link to={`/dashboard/payment/${myOrder._id}`}><button className='btn btn-xs btn-success'>pay</button></Link>}
+                                        {(myOrder.price && myOrder.paid) && <div>
+                                            <p><span className='text-success'>Paid</span></p>
+                                            <p>Transaction id: <span className='text-success'>{myOrder.transactionId}</span></p>
+                                        </div>}
                                     </td>
                                 </tr>)
                             }

@@ -22,6 +22,7 @@ import AddProduct from './Components/Addproduct/AddProduct';
 import Allproduct from './Components/AllProduct/Allproduct';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Users from './Components/Users/Users';
+import Payment from './Components/Payment/Payment';
 function App() {
   return (
     <div className="App">
@@ -29,19 +30,28 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/dassboard" element={<Dashboard />} />
-        <Route path="dashboard/myprofile" element={<MyProfile />} />
-        <Route path="dashboard/addreviews" element={<AddReview />} />
-        <Route path="dashboard/myOrder" element={<Myorder />} />
-        <Route path="dashboard/updatedProfie" element={<Updateprofile />} />
-        <Route path="dashboard/addProduct" element={<AddProduct />} />
-        <Route path="dashboard/allProduct" element={<Allproduct />} />
-        <Route path="/dashboard/users" element={<Users />} />
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route path="myOrder" element={<Myorder />} />
+          <Route path="addreviews" element={<AddReview />} />
+          <Route path="myprofile" element={<MyProfile />} />
+          <Route path="updatedProfile" element={<Updateprofile />} />
+          <Route path="addProduct" element={<AddProduct />} />
+          <Route path="allProduct" element={<Allproduct />} />
+          <Route path="users" element={<Users />} />
+          <Route path="allreviews" element={<AllReviews />} />
+        </Route>
+
+
+
+
+        <Route path="payment/:id" element={<Payment></Payment>}></Route>
+
+
         <Route path="/login" element={<Login />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/review" element={<Review />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/allreviews" element={<AllReviews />} />
+
         <Route path="/register" element={<Register />} />
         <Route path='/purchase/:id' element={
           <RequireAuth>
