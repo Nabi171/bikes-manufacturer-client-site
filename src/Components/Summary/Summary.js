@@ -9,7 +9,7 @@ const Summary = () => {
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <img src={img} class="max-w-sm rounded-lg " />
                     <div>
-                        <h1 class="text-5xl font-bold">Best collection all the time</h1>
+                        <h1 class="text-5xl font-bold">Business Summary</h1>
                         <hr />
                         <p class="py-6 text-1xl text-primary font-bold ">We provide best bike parts all the time and there reserved best bike parts collection.We served thousand of customers still serving our best effort.We hope that that you will be grateful for our product.</p>
                         <p className='text-2xl'><span className='font-bold text-2xl'>Serving Customers

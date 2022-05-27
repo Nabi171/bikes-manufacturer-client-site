@@ -6,14 +6,9 @@ const SectionOne = () => {
             <div class="hero min-h-screen bg-card rounded-lg">
                 <div class="hero-content  flex-col lg:flex-row-reverse">
                     <div class="text-center pl-20 lg:text-left">
-                        <h1 class="text-5xl font-bold">Login now!</h1>
-                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <ul class="steps steps-vertical">
-                            <li class="step step-primary">Register</li>
-                            <li class="step step-primary">Choose plan</li>
-                            <li class="step">Purchase</li>
-                            <li class="step">Receive Product</li>
-                        </ul>
+                        <h1 class="text-5xl font-bold">Subscribe Now</h1>
+                        <p class="py-6 text-1xl font-bold text-primary">Thanks honourable for choosing the product from here,we have best collection which has international quality.We will be indebted to you if you get connected by subscribing there for future notificatio.Thank you.</p>
+
                     </div>
                     <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div class="card-body">
@@ -33,7 +28,7 @@ const SectionOne = () => {
                                 </label>
                             </div>
                             <div class="form-control mt-6">
-                                <button class="btn btn-primary">Login</button>
+                                <button class="btn btn-primary">Subscribe</button>
                             </div>
                         </div>
                     </div>

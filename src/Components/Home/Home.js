@@ -7,6 +7,7 @@ import Review from '../Review/Review';
 
 import SectionOne from '../SectionOne/SectionOne';
 import CaroSel from '../CaroSel/CaroSel';
+import ExtraSectionthree from '../ExtraSectionthree/ExtraSectionthree';
 
 const Home = () => {
     return (
@@ -29,10 +30,10 @@ const Home = () => {
 
             <Review></Review>
             <br />
-            <h2 className="text-center font-bold text-3xl text-primary">UPCOMMING TOOLS</h2>
+            <h2 className="text-center font-bold text-3xl text-primary">Methods</h2>
             <div class="grid h-1 container mx-auto card navbar-bg text-bold text-3xl rounded-box place-items-center"></div>
             <br />
-            <CaroSel />
+            <ExtraSectionthree></ExtraSectionthree>
             <br />
 
             <h2 className="text-center font-bold text-3xl text-primary">JOIN US</h2>

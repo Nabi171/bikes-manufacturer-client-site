@@ -109,7 +109,7 @@ const Login = () => {
 
                         </div>
                         {signInError}
-                        <input className='btn w-full max-w-xs text-white mx-auto' type="submit" value="Sign Up" />
+                        <input className='btn w-full max-w-xs text-white mx-auto' type="submit" value="Login" />
                         <p><small>You are New user!! <Link className='text-primary' to="/register">Please Register</Link></small></p>
                         <div className="divider">OR</div>
                         <button
