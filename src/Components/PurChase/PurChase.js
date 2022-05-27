@@ -16,7 +16,7 @@ const PurChase = () => {
     const [tool, setTool] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:4000/tools/${id}`;
+        const url = `https://whispering-sea-34909.herokuapp.com/tools/${id}`;
         fetch(url)
             .then((res) => res.json())
             .then((data) => setTool(data));
@@ -43,7 +43,7 @@ const PurChase = () => {
         console.log(order);
 
         //now applying the post method
-        const url = `http://localhost:4000/bookedTools`;
+        const url = `https://whispering-sea-34909.herokuapp.com/bookedTools`;
         fetch(url, {
             method: "POST",
             headers: {

@@ -4,7 +4,7 @@ import ShowReview from '../ShowReview/ShowReview';
 const Review = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/reviews').then(res => res.json()).then(data => setReviews(data))
+        fetch('https://whispering-sea-34909.herokuapp.com/reviews').then(res => res.json()).then(data => setReviews(data))
     }, []);
     return (
         <div className="bgallCard">

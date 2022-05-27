@@ -7,7 +7,7 @@ const Updateprofile = () => {
     const onSubmit = (data) => {
 
 
-        const url = `http://localhost:4000/updateProfile`;
+        const url = `https://whispering-sea-34909.herokuapp.com/updateProfile`;
         fetch(url, {
             method: 'PUT',
             headers: {

@@ -7,7 +7,7 @@ const ShowManageProducts = (props) => {
     const [tools, setTools] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:4000/tools")
+        fetch("https://whispering-sea-34909.herokuapp.com/tools")
             .then(res => res.json())
             .then(data => setTools(data))
     }, []);
@@ -17,7 +17,7 @@ const ShowManageProducts = (props) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to delete and reload the page after delete?');
         if (proceed) {
-            const url = `http://localhost:4000/tools/${id}`;
+            const url = `https://whispering-sea-34909.herokuapp.com/tools/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

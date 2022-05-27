@@ -10,7 +10,7 @@ const Myorder = () => {
 
     useEffect(() => {
         if (user) {
-            fetch("http://localhost:4000/bookedTools", {
+            fetch("https://whispering-sea-34909.herokuapp.com/bookedTools", {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json'
@@ -27,7 +27,7 @@ const Myorder = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to delete?');
         if (proceed) {
-            const url = `http://localhost:4000/bookedTools/${id}`;
+            const url = `https://whispering-sea-34909.herokuapp.com/bookedTools/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

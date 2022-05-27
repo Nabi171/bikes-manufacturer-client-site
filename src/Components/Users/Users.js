@@ -8,7 +8,7 @@ const Users = () => {
 
     const [users, setUsers, refetch] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/user').then(res => res.json()).then(data => setUsers(data))
+        fetch('https://whispering-sea-34909.herokuapp.com/user').then(res => res.json()).then(data => setUsers(data))
     }, []);
     // if (isLoading) {
 

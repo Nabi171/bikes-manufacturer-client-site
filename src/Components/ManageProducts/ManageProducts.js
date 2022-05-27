@@ -4,7 +4,7 @@ import ShowManageProducts from './ShowManageProducts';
 const ManageProducts = () => {
     const [products, setManageProducts] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:4000/tools")
+        fetch("https://whispering-sea-34909.herokuapp.com/tools")
             .then(res => res.json())
             .then(data => setManageProducts(data))
     }, []);

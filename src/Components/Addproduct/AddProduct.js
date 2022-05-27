@@ -6,7 +6,7 @@ const AddProduct = () => {
 
     const onSubmit = (data) => {
 
-        const url = `http://localhost:4000/tools`;
+        const url = `https://whispering-sea-34909.herokuapp.com/tools`;
         fetch(url, {
             method: 'POST',
             headers: {

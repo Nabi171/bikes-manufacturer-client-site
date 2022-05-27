@@ -8,7 +8,7 @@ const MyProfile = () => {
     const [user] = useAuthState(auth);
     const [updatedUser, setUpdatedUser] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:4000/updateProfile').then(res => res.json()).then(data => setUpdatedUser(data));
+        fetch('https://whispering-sea-34909.herokuapp.com/updateProfile').then(res => res.json()).then(data => setUpdatedUser(data));
     }, [])
     console.log(user);
     return (

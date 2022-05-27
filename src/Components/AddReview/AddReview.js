@@ -8,7 +8,7 @@ const AddReview = () => {
         const ratings = e.target.ratings.value;
         console.log(ratings);
         if (ratings < 6) {
-            const url = `http://localhost:4000/reviews`;
+            const url = `https://whispering-sea-34909.herokuapp.com/reviews`;
             fetch(url, {
                 method: 'POST',
                 headers: {
