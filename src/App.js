@@ -23,6 +23,7 @@ import Allproduct from './Components/AllProduct/Allproduct';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Users from './Components/Users/Users';
 import Payment from './Components/Payment/Payment';
+import ManageProducts from './Components/ManageProducts/ManageProducts';
 function App() {
   return (
     <div className="App">
@@ -42,6 +43,8 @@ function App() {
           <Route path="allProduct" element={<Allproduct />} />
           <Route path="users" element={<Users />} />
           <Route path="allreviews" element={<AllReviews />} />
+          <Route path="manageProducts" element={<ManageProducts />} />
+
         </Route>
 
 

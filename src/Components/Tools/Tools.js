@@ -15,7 +15,7 @@ const Tools = () => {
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
-                    tools.slice(0, 6).map(tool => <ShowTool
+                    tools.map(tool => <ShowTool
                         tool={tool._id} tool={tool}
 
                     ></ShowTool>)
