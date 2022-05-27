@@ -2,7 +2,7 @@ import React from "react";
 
 const Portfolio = () => {
     return (
-        <div className="flex justify-center items-center bg-orange-200 pb-24">
+        <div className="flex justify-center items-center navbar-bg pb-24">
             <div className="pt-24  w-2/5 mx-auto">
                 <h1 className="text-3xl pb-6">PortFolio Section!!</h1>
                 <div className="bg-base-200">
@@ -10,11 +10,11 @@ const Portfolio = () => {
                 </div>
                 <h2 className="text-2xl pb-4">
                     <span className="font-bold">Name : </span> <br />
-                    Al Nahian{" "}
+                    Nabiul Bashar
                 </h2>
                 <h2 className="text-2xl pb-4">
                     <span className="font-bold">Email: </span> <br />
-                    muhammedalnahian@gmail.com{" "}
+                    nabiultasbed@gmail.com{" "}
                 </h2>
                 <h2 className="text-2xl pb-4">
                     <span className="font-bold">Educational Qualification : </span> <br />
@@ -42,29 +42,29 @@ const Portfolio = () => {
                     <br />
                     <div className="pt-8 pb-6">
                         <a
-                            className="p-2 bg-red-500 rounded"
-                            href="https://soft-souffle-4862f9.netlify.app/ "
+                            className="p-2 bg-primary rounded"
+                            href="https://phone-stokes.web.app/home "
                         >
-                            1.Batman Project
+                            1.Phone Stokes
             </a>
                     </div>
                     <div className="pt-6 pb-6">
                         <a
-                            className="p-2 bg-pink-500 rounded"
-                            href=" https://pr-retailer-new.web.app/ "
+                            className="p-2 bg-primary rounded"
+                            href=" https://techno-fdaab.web.app/home "
                         >
-                            2.Retailer website
+                            2.Technical Zone
             </a>
                     </div>
                     <div className="pt-6 pb-6">
                         <a
-                            className="p-2 bg-blue-500 rounded"
-                            href="https://mdalnahian.github.io/lorukitraversy/ "
+                            className="p-2 bg-primary rounded"
+                            href="https://harmonious-lolly-1fdae9.netlify.app/home"
                         >
-                            3.Cloud Hosting website
+                            3.Al Noor Car Project
             </a>
                     </div>
-                    {/* <a href=" ">3. https://mdalnahian.github.io/lorukitraversy/ </a> */}
+
                 </h2>
             </div>
         </div>

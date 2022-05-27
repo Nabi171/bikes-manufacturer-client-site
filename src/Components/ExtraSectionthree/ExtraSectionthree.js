@@ -3,7 +3,7 @@ import img from '../ExtraSectionthree/three.png'
 const ExtraSectionthree = () => {
     return (
         <div className='container mx-auto'>
-            <div class="hero min-h-screen navbar-bg rounded-lg">
+            <div class="hero min-h-screen bg-card rounded-lg">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <img src={img} />
                     <div>

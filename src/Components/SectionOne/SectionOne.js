@@ -10,8 +10,8 @@ const SectionOne = () => {
                         <p class="py-6 text-1xl font-bold text-primary">Thanks honourable for choosing the product from here,we have best collection which has international quality.We will be indebted to you if you get connected by subscribing there for future notificatio.Thank you.</p>
 
                     </div>
-                    <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <div class="card-body">
+                    <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 ml-12">
+                        <div class="card-body navbar-bg ">
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Email</span>
