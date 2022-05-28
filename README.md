@@ -1,5 +1,5 @@
 # Front End
-**i use reac application,React Tailwind,React Font Awesome,React Hook form,React Router,React ICon,firebase,firebase github hooks etc
+-i use reac application,React Tailwind,React Font Awesome,React Hook form,React Router,React ICon,firebase,firebase github hooks etc
 **There are 6 navigate sections Home,,BLogs,SignUp,Register and Login Serctions etc
 **there used login and signUP authentication if anyone get a service from there he/she have to pass the private route first where you have to go though the login and submit form.
 **there used Banner,Collections,Addmin,summary and footer in home page section
