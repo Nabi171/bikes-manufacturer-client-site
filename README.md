@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Front End
+**i use reac application,React Tailwind,React Font Awesome,React Hook form,React Router,React ICon,firebase,firebase github hooks etc
+**There are 6 navigate sections Home,,BLogs,SignUp,Register and Login Serctions etc
+**there used login and signUP authentication if anyone get a service from there he/she have to pass the private route first where you have to go though the login and submit form.
+**there used Banner,Collections,Addmin,summary and footer in home page section
+**there data loaded from mongoDb whrere data are seted in backend application using mongoDb
+**here used manage itemns section where admin pannel can delete any phone which set up dashboard section.
+**n dashbord section addmin panel can add product  with their own choice and delete from manage products but he should be login first.
+**f any user login he/she can purchase any product,if he/she confirm a order he/she see it in the dassboaed section where he can add a review,delete order and update profile.
+**here used dynamic routes if anyone are in signOut they cannt access in dashboard  section,purchase order and add confirm order section
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# uses frameworks
 
-## Available Scripts
+1.HTML
+2.CSS
+3.JS
+4.REACT APP
+5.REACT ROUTER
+6.REACT Tailwind
+&.DaisiUi
+&.fire github hooks
 
-In the project directory, you can run:
 
-### `npm start`
+#features
+1.Implementation of Google and Password Authentication
+2.Implementation of Admin Panel Features
+3.Implementation of React and Routing
+4.Implemention of User Interaction Features
+5.Implementation of API based data loading
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Authentication
+1.Email 
+2.email amd password
+3.goggle
+4.reset password
+5.email verification usiong firebase github hooks
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#deploy
+1.deploied in firebase
+2.backend data heroku
 
-### `npm test`
+# Back End
+1.use mongoDb for backend application
+2.Express js
+#.Node.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#features
+1.plementation of Admin CRUD Operations
+2.plementation of Rest API calls
+3.age of Node.js
+4.age of Express.js
+5.age of CORS Policy and MongoDB
