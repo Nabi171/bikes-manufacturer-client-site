@@ -14,7 +14,7 @@ import { useQuery } from 'react-query';
 
 const Payment = () => {
     const { id } = useParams();
-    const url = `http://localhost:4000/bookedTools/${id}`;
+    const url = `http://https://whispering-sea-34909.herokuapp.com/bookedTools/${id}`;
 
     const { data: appointment, isLoading } = useQuery(['booking', id], () => fetch(url, {
         method: 'GET',

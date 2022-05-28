@@ -6,6 +6,7 @@ const useAdmin = user => {
     useEffect(() => {
         const email = user ?.email;
         if (email) {
+            console.log(email);
             fetch(`https://whispering-sea-34909.herokuapp.com/admin/${email}`, {
                 method: 'GET',
                 headers: {

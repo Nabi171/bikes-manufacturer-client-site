@@ -21,7 +21,7 @@ const BookingModal = (props) => {
             phone: event.target.phone.value
         }
 
-        fetch('http://localhost:4000/booking', {
+        fetch('http://https://whispering-sea-34909.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

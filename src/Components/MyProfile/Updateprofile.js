@@ -42,7 +42,7 @@ const Updateprofile = () => {
 
 
                         <label class="label">Phone Number</label>
-                        <input placeholder='Your Reviews' {...register("phoneNumber")} className="input input-bordered w-full max-w-xs" type="number" />
+                        <input placeholder='phone number' {...register("phoneNumber")} className="input input-bordered w-full max-w-xs" type="number" />
 
                         <label class="label">Linkdein Profile Link</label>
                         <input placeholder='Linkdein Profile Link' {...register("linkdeinLink")} className="input input-bordered w-full max-w-xs mb-3" type="text" />

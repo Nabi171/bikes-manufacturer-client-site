@@ -12,7 +12,7 @@ const Showprofile = (props) => {
 
     useEffect(() => {
 
-        fetch("http://localhost:4000/updateProfile", {
+        fetch("http://https://whispering-sea-34909.herokuapp.com/updateProfile", {
             method: 'GET',
             headers: {
                 'content-type': 'application/json'
@@ -28,7 +28,7 @@ const Showprofile = (props) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:4000/updateProfile/${id}`;
+            const url = `http://https://whispering-sea-34909.herokuapp.com/updateProfile/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
