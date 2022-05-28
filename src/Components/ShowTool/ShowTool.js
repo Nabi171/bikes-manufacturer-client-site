@@ -14,10 +14,10 @@ const ShowTool = (props) => {
 
                 <div class="card-body items-center text-center">
                     <h2 class="card-title">{Name}</h2>
-                    <h4>Price:{price}</h4>
+                    <h4>Price:${price}</h4>
                     <h4>Avaialable:{availableQuantity}</h4>
                     <h4>Minimum Order:{minimumOrder}</h4>
-                    <p>{description}</p>
+                    <p class="font-bold text-primary">{description}</p>
                     <div class="card-actions">
                         <button
                             onClick={() => navigate('/purchase/' + _id)}

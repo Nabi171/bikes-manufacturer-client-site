@@ -26,7 +26,7 @@ const MyProfile = () => {
                         Wellcome To {user.displayName}
                         <div class="badge badge-primary">profile</div>
                     </h2>
-                    <p><span class="text-black">Email</span>{user.email}</p>
+                    <p><span class="text-black">Email: </span>{user.email}</p>
                     {/* <p>{updatedUser.education}</p> */}
                     {updatedUser ? <div>
                         {updatedUser.slice(0, 1).map(upuser =>

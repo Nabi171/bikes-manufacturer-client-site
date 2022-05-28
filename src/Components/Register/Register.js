@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 // import Loading from '../Shared/Loading';
 import { Link, useNavigate } from 'react-router-dom';
 import useToken from '../../useToken';
+import Loading from '../Loading/Loading';
 
 const Register = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -23,9 +24,9 @@ const Register = () => {
     const navigate = useNavigate();
     let signInError;
 
-    // if (loading || gLoading || updating) {
-    //     return <Loading></Loading>
-    // }
+    if (loading || gLoading || updating) {
+        return <Loading></Loading>
+    }
 
     if (error || gError || updateError) {
         signInError = <p className='text-red-500'><small>{error ?.message || gError ?.message || updateError ?.message}</small></p>

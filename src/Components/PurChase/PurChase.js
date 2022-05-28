@@ -1,12 +1,8 @@
-
-
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate, useParams } from 'react-router-dom';
 import auth from '../../firebase.init';
-
 const PurChase = () => {
-
     const navigate = useNavigate();
 
     const [user] = useAuthState(auth);
@@ -62,8 +58,6 @@ const PurChase = () => {
             });
 
     }
-
-
 
 
     return (

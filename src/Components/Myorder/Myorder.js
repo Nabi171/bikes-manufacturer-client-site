@@ -70,7 +70,7 @@ const Myorder = () => {
                                     <th>{index + 1}</th>
                                     <td>{myOrder.name}</td>
                                     <td>{myOrder.email}</td>
-                                    <td>{myOrder.price}</td>
+                                    <td>${myOrder.price}</td>
                                     <td>
                                         <button className='btn btn-primary' onClick={() => handleDelete(myOrder._id)}>Cancel Order</button>
 
